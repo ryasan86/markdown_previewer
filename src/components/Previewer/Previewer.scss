@@ -1,0 +1,12 @@
+#previewer-container {
+  grid-area: previewer-container;
+  margin: 0 1%;
+  width: 98%;
+  overflow: hidden;
+  #previewer {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    border: #ccc 1px solid;
+  }
+}

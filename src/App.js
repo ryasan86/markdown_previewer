@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Editor from './components/Editor/Editor';
+import Previewer from './components/Previewer/Previewer';
+import { placeholder } from './Placeholder';
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      text: placeholder
+    };
+    this.handleText = this.handleText.bind(this);
+  }
+
+  handleText(text) {
+    this.setState({ text: text });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div id="app">
+        <Editor text={this.state.text} onText={this.handleText} />
+        <Previewer text={this.state.text} />
       </div>
     );
   }

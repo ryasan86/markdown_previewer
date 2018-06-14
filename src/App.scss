@@ -4,5 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "editor-container previewer-container";
-  border: black 1px solid; }
+  grid-template-areas: 
+  "editor-container previewer-container";
+  border: black 1px solid;
+}
