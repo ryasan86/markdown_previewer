@@ -23,7 +23,7 @@ export default class Previewer extends Component {
   render() {
     const { onScreenToggle, view,icon } = this.props;
     return (
-      <div className="container">
+      <div className="wrapper">
         <Toolbar onScreenToggle={onScreenToggle} icon={icon} view="previewOnly" />
         <div id="preview" className="text-background" dangerouslySetInnerHTML={this.getMarkdownText()} />
       </div>

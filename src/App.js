@@ -48,7 +48,10 @@ export default class App extends Component {
 
     return (
       <div id="app">
-        {this.state.editorOnly ? EDITOR : this.state.previewOnly ? PREVIEW : <Fragment>{EDITOR}{PREVIEW}</Fragment>}
+        <h2>React Markdown Previewer</h2>
+        <div className="container">
+          {this.state.editorOnly ? EDITOR : this.state.previewOnly ? PREVIEW : <Fragment>{EDITOR}{PREVIEW}</Fragment>}  
+        </div>   
       </div>
     );
   }

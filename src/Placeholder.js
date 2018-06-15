@@ -1,6 +1,6 @@
 export const placeholder = `# Welcome to my React Markdown Previewer!
 
-## This is a sub-heading...
+## This is an H2 heading
 ### And here's some other cool stuff:
   
 Heres some code, \`<div></div>\`, between 2 backticks.
@@ -15,20 +15,10 @@ function anotherExample(firstLine, lastLine) {
 }
 \`\`\`
   
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
+You can also make text **bold**
 
-There's also [links](https://www.freecodecamp.com), and
-> Block Quotes!
 
-And if you want to get really crazy, even tables:
-
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | ------------- 
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+There's also [links](https://codepen.io/ryasan86/pen/wXqOwG?editors=0110)
 
 - And of course there are lists.
   - Some are bulleted.
@@ -36,11 +26,11 @@ And here. | Okay. | I think we get it.
         - That look like this.
 
 
-1. And there are numbererd lists too.
+1. And there are numbered lists too.
 1. Use just 1s if you want! 
 1. But the list goes on...
 - Even if you use dashes or asterisks.
 * And last but not least, let's not forget embedded images:
 
-![React Logo w/ Text](https://goo.gl/Umyytc)
+ ![React Logo w/ Text](https://goo.gl/Umyytc)
 `;
