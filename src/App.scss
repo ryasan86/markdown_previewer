@@ -30,27 +30,40 @@ body {
     color: $light;
     margin-left: 2%;
   }
+  .container {
+    display: flex;
+    height: 100%;
+    .wrapper {
+      height: 80vh;
+      width: 100%;
+      padding: 2%;
+      color: $light;
+      position: relative;
+      animation-name: wrapper-intro;
+      animation-duration: 0.7s;
+      .text-background {
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        overflow-y: scroll;
+        background-color: darken($medium, 30%);
+      }
+      textarea {
+        color: $light;
+        outline: none;
+      }
+    }
+  }
 }
 
-.container {
-  display: flex;
-  height: 100%;
-  .wrapper {
-    height: 80vh;
-    width: 100%;
-    padding: 2%;
-    color: $light;
-    .text-background {
-      width: 100%;
-      height: 100%;
-      padding: 2%;
-      overflow-y: scroll;
-      background-color: darken($medium, 30%);
-    }
-    textarea {
-      color: $light;
-      outline: none;
-    }
+@keyframes wrapper-intro {
+  0% {
+    left: 0px;
+    bottom: -100vh;
+  }
+  100% {
+    left: 0px;
+    bottom: 0px;
   }
 }
 
