@@ -15,10 +15,9 @@ body {
   margin: 0 0;
   overflow: hidden;
   background-color: $medium;
-}
-
-#root {
-  height: 100%;
+  #root {
+    height: 100%;
+  }
 }
 
 #app {
@@ -49,10 +48,25 @@ body {
         background-color: darken($medium, 30%);
       }
       textarea {
+        border-top-style: none;
         color: $light;
         outline: none;
       }
     }
+  }
+}
+
+#toolbar {
+  padding: 5px;
+  background-color: $dark;
+  color: $light;
+  border-bottom-style: none;
+  text-align: center;
+  -webkit-box-shadow: 0 8px 6px -6px red;
+  -moz-box-shadow: 0 8px 6px -6px red;
+  box-shadow: 0 8px 6px -6px red;
+  i {
+    float: right;
   }
 }
 
@@ -64,18 +78,6 @@ body {
   100% {
     left: 0px;
     bottom: 0px;
-  }
-}
-
-#toolbar {
-  padding: 5px;
-  background-color: $dark;
-  color: $light;
-  border: $light 1px solid;
-  border-bottom-style: none;
-  text-align: center;
-  i {
-    float: right;
   }
 }
 
