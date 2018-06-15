@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './Editor.css';
-import Toolbar from '../Toolbar/Toolbar';
+import Toolbar from './Toolbar';
 
 export default class Editor extends Component {
   handleChange(val) {
@@ -11,7 +10,7 @@ export default class Editor extends Component {
     const { onScreenToggle, view, icon, text } = this.props;
     return (
       <div className="container">
-        <Toolbar onScreenToggle={onScreenToggle} icon={icon} view={view} />
+        <Toolbar onScreenToggle={onScreenToggle} icon={icon} view="editorOnly" />
         <textarea
           id="editor"
           type="text"

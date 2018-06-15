@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
-import Editor from './components/Editor/Editor';
-import Previewer from './components/Previewer/Previewer';
+import Editor from './components/Editor';
+import Previewer from './components/Previewer';
 import { placeholder } from './Placeholder';
 
 export default class App extends Component {
@@ -33,7 +33,6 @@ export default class App extends Component {
       <Editor
         text={this.state.text}
         icon={icon}
-        view="editor"
         onText={this.handleText}
         onScreenToggle={this.handleScreenToggle}
       />
@@ -43,7 +42,6 @@ export default class App extends Component {
       <Previewer
         text={this.state.text}
         icon={icon}
-        view="preview"
         onScreenToggle={this.handleScreenToggle}
       />
     );

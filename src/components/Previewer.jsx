@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Marked from 'marked';
-import './Previewer.css';
-import Toolbar from '../Toolbar/Toolbar';
+import Toolbar from './Toolbar';
 
 export default class Previewer extends Component {
   componentDidMount() {
@@ -25,7 +24,7 @@ export default class Previewer extends Component {
     const { onScreenToggle, view,icon } = this.props;
     return (
       <div className="container">
-        <Toolbar onScreenToggle={onScreenToggle} icon={icon} view={view} />
+        <Toolbar onScreenToggle={onScreenToggle} icon={icon} view="previewOnly" />
         <div id="preview" className="text-background" dangerouslySetInnerHTML={this.getMarkdownText()} />
       </div>
     );
