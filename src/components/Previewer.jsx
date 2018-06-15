@@ -21,7 +21,7 @@ export default class Previewer extends Component {
   }
 
   render() {
-    const { onScreenToggle, view,icon } = this.props;
+    const { onScreenToggle,icon } = this.props;
     return (
       <div className="wrapper">
         <Toolbar onScreenToggle={onScreenToggle} icon={icon} view="previewOnly" />

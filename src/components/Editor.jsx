@@ -7,7 +7,7 @@ export default class Editor extends Component {
   }
 
   render() {
-    const { onScreenToggle, view, icon, text } = this.props;
+    const { onScreenToggle, icon, text } = this.props;
     return (
       <div className="wrapper">
         <Toolbar onScreenToggle={onScreenToggle} icon={icon} view="editorOnly" />
