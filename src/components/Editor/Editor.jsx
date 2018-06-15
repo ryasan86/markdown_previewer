@@ -8,13 +8,15 @@ export default class Editor extends Component {
   }
 
   render() {
+    const { onScreenToggle, view, icon, text } = this.props;
     return (
-      <div id="editor-container">
-        <Toolbar />
+      <div className="container">
+        <Toolbar onScreenToggle={onScreenToggle} icon={icon} view={view} />
         <textarea
           id="editor"
           type="text"
-          value={this.props.text}
+          className="text-background"
+          value={text}
           onChange={e => this.handleChange(e.target.value)}
         />
       </div>
